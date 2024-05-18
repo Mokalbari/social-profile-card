@@ -16,3 +16,66 @@
 }
 
 /* END OF ROOT SELECTOR */
+body {
+  background-color: var(--clr-neutral-800);
+  color: var(--clr-neutral-200);
+  font-family: var(--ff-main);
+  font-size: var(--size);
+
+  display: grid;
+  place-items: center;
+}
+
+.card__container {
+  background-color: var(--clr-neutral-600);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  margin: min(100vw - 20px, 0.5rem);
+
+  display: grid;
+  place-items: center;
+
+  .card__img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+
+  .card__title {
+    font-weight: var(--fw-bold);
+    margin-bottom: 0.25em;
+  }
+
+  .card__city {
+    color: var(--clr-primary);
+    opacity: 0.9;
+    font-weight: var(--fw-extra-bold);
+    margin-bottom: 1em;
+  }
+
+  .card__p {
+    margin-bottom: 1.5em;
+  }
+
+  .card__list-container {
+    text-align: center;
+    align-self: stretch;
+    width: 100%;
+  }
+
+  .card__list-ul {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
+
+    li {
+      background-color: var(--clr-neutral-400);
+      padding: 0.5em 1em;
+      border-radius: 0.25rem;
+    }
+
+    a {
+      font-weight: var(--fw-bold);
+    }
+  }
+}
